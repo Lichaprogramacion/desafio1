@@ -1,4 +1,4 @@
-import randint in random
+import random
 tiempo = 0
 jargentina= [('Agustina Gorzelany',11),
              ('Maria Jose Granatto',9),
