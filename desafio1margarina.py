@@ -1,5 +1,4 @@
 import random
-from sys import argv
 tiempo = 0
 jargentina= [(1,'Agustina Gorzelany'),
              (2,'Maria Jose Granatto'),
