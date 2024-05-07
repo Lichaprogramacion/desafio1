@@ -21,19 +21,19 @@ jaustralia= [('Madonna Blyth',9),
              ('',16),
             ]
 def pase():
-        if randint(0,1)==1:
+        if random.randint(0,1)==1:
             print('el pase fue exitoso')
-        else
+        else:
             print('el pase no fue exitoso')
 def paseargentina():
-    print('La jugadora 'jargentina[randint(0,8)],' hizo un pase en el minuto 'tiempo,end=' ')
+    print('La jugadora ',jargentina[random.randint(0,8)],' hizo un pase en el minuto ',tiempo,end=' ')
 def paseaustralia():
-    print('La jugadora 'jaustralia[randint(0,8)],' hizo un pase en el minuto 'tiempo,end=' ')
+    print('La jugadora ',jaustralia[random.randint(0,8)],' hizo un pase en el minuto ',tiempo,end=' ')
 while tiempo<=60:
-    tiempo = randint(tiempo,60)
-    if randint(0,1)==0:
-        paseaustralia(tiempo)
+    tiempo = random.randint(tiempo,60)
+    if random.randint(0,1)==0:
+        jugadora=paseaustralia(tiempo)
         pase()
     else:
-        paseargentina(tiempo)
+        jugadora=paseargentina(tiempo)
         pase()
