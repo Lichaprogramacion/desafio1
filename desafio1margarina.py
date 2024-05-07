@@ -30,9 +30,9 @@ def pase():
         else:
             return 0
 def paseargentina(tiempo):
-    print('Argentina',jargentina[random.randint(0,8)],pase(),tiempo,end=' ')
+    print('Argentina;',jargentina[random.randint(0,8)],';',pase(),';',tiempo,end=' ')
 def paseaustralia(tiempo):
-    print('Australia',jaustralia[random.randint(0,8)],pase(),tiempo,end=' ')
+    print('Australia;',jaustralia[random.randint(0,8)],';',pase(),';',tiempo,end=' ')
 while tiempo<60:
     tiempo = random.randint(tiempo,tiempo+1)
     if random.randint(0,1)==0:
@@ -41,3 +41,4 @@ while tiempo<60:
     else:
         jugadora=paseargentina(tiempo)
         pase()
+    print()
