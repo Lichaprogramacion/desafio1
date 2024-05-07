@@ -1,24 +1,28 @@
 import random
 tiempo = 0
-jargentina= [(11,'Agustina Gorzelany'),
-             (9,'Maria Jose Granatto'),
-             (20,'Sofia Toccalino'),
-             (10,'Agostina Alonso'),
-             (8,'Valentina Raposo'),
-             (5,'Clara Barberi'),
-             (4,'Delfina Thome'),
-             (7,'Sofia Cairó'),
-             (16,'Pilar Campoy'),
+jargentina= [(1,'Agustina Gorzelany'),
+             (2,'Maria Jose Granatto'),
+             (3,'Sofia Toccalino'),
+             (4,'Agostina Alonso'),
+             (5,'Valentina Raposo'),
+             (6,'Clara Barberi'),
+             (7,'Delfina Thome'),
+             (8,'Sofia Cairó'),
+             (9,'Pilar Campoy'),
+             (10,'Agustina Albetario'),
+             (11,'Maria Pilar Campoy'),
              ]
-jaustralia= [(9,'Madonna Blyth'),
-             (8,'Toni Cronk'),
-             (20,'Alice Arnot'),
-             (10,'Katrina Powell'),
-             (1,'Kobie Mcgurk'),
-             (5,'Jocelyn Bartman'),
-             (4,'Maddison Brooks'),
-             (7,'Jane Claxton'),
-             (16,'Claire colwill'),
+jaustralia= [(1,'Madonna Blyth'),
+             (2,'Toni Cronk'),
+             (3,'Alice Arnot'),
+             (4,'Katrina Powell'),
+             (5,'Kobie Mcgurk'),
+             (6,'Jocelyn Bartman'),
+             (7,'Maddison Brooks'),
+             (8,'Jane Claxton'),
+             (9,'Claire colwill'),
+             (10,'Penny Squibb'),
+             (11,'Grace Stewart'),
             ]
 def pase():
         if random.randint(0,1)==1:
@@ -37,3 +41,4 @@ while tiempo<60:
     else:
         jugadora=paseargentina(tiempo)
         pase()
+
