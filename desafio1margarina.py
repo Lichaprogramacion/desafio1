@@ -29,8 +29,8 @@ def paseargentina(tiempo):
     print('La jugadora ',jargentina[random.randint(0,8)],' hizo un pase en el minuto ',tiempo,end=' ')
 def paseaustralia(tiempo):
     print('La jugadora ',jaustralia[random.randint(0,8)],' hizo un pase en el minuto ',tiempo,end=' ')
-while tiempo<61:
-    tiempo = random.randint(tiempo,61)
+while tiempo<60:
+    tiempo = random.randint(tiempo,60)
     if random.randint(0,1)==0:
         jugadora=paseaustralia(tiempo)
         pase()
