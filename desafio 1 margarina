@@ -20,23 +20,20 @@ jaustralia= [('Madonna Blyth',9),
              ('',7),
              ('',16),
             ]
-def paseargentina(
+def pase():
+        if randint(0,1)==1:
+            print('el pase fue exitoso')
+        else
+            print('el pase no fue exitoso')
+def paseargentina():
     print('La jugadora 'jargentina[randint(0,8)],' hizo un pase en el minuto 'tiempo,end=' ')
-    if randint(0,1)==1:
-        print('el pase fue exitoso')
-    if randint(0,1)==0:
-        print('el pase no fue exitoso')
-    )
-def paseaustralia(
+def paseaustralia():
     print('La jugadora 'jaustralia[randint(0,8)],' hizo un pase en el minuto 'tiempo,end=' ')
-    if randint(0,1)==1:
-        print('el pase fue exitoso')
-    if randint(0,1)==0:
-        print('el pase no fue exitoso')
-    )
 while tiempo<=60:
     tiempo = randint(tiempo,60)
     if randint(0,1)==0:
         paseaustralia(tiempo)
+        pase()
     else:
         paseargentina(tiempo)
+        pase()
