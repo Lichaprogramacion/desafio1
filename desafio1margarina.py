@@ -1,4 +1,5 @@
 import random
+from sys import argv
 tiempo = 0
 jargentina= [(1,'Agustina Gorzelany'),
              (2,'Maria Jose Granatto'),
@@ -24,15 +25,18 @@ jaustralia= [(1,'Madonna Blyth'),
              (10,'Penny Squibb'),
              (11,'Grace Stewart'),
             ]
+f = open('resultado.txt', 'w')
 def pase():
         if random.randint(0,1)==1:
             return 1
         else:
             return 0
 def paseargentina(tiempo):
-    print('Argentina;',jargentina[random.randint(0,8)],';',pase(),';',tiempo,end=' ')
+    escribir=str(('Argentina',jargentina[random.randint(0,8)],pase(),tiempo))
+    f.write(escribir + '\n')
 def paseaustralia(tiempo):
-    print('Australia;',jaustralia[random.randint(0,8)],';',pase(),';',tiempo,end=' ')
+    escribir=str(('Australia',jaustralia[random.randint(0,8)],pase(),tiempo,))
+    f.write(escribir + '\n')
 while tiempo<60:
     tiempo = random.randint(tiempo,tiempo+1)
     if random.randint(0,1)==0:
@@ -41,4 +45,5 @@ while tiempo<60:
     else:
         jugadora=paseargentina(tiempo)
         pase()
-    print()
+f.close()
+
